@@ -10,6 +10,14 @@ Project adds few new functions for arrays
 - Possiblity to create custom functions faster
 
 
+## Deployment
+
+To import all functions use
+```javascript
+  import * as ArraysExtends from "./ArraysExtends.js"
+```
+
+
 ## Documentation
 
 [Documentation](https://linktodocumentation)
