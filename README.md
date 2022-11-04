@@ -12,9 +12,9 @@ Project adds few new functions for arrays
 
 ## Deployment
 
-To import all functions use
+To import functions use
 ```javascript
-  import * as ArraysExtends from "./ArraysExtends.js"
+  import "./ExtendedArrays.js"
 ```
 
 
