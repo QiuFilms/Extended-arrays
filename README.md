@@ -20,7 +20,7 @@ To import functions use
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation]()
 
 ## Available functions
 
@@ -48,14 +48,11 @@ To import functions use
 const baseArray = [1,2,3,6,5,4,2]
 
 baseArray.largest()  // Returns 6
-baseArray.largest().print()  //Prints 6 in console
 
 baseArray.smallest()  // Returns 1
-baseArray.smallest().print()  //Prints 1 in console
 
 baseArray.populate(length, random) // length defies number of elements to create
                                    // random is boolean value to specify if element should be randomized
-baseArray.populate().print()  //Prints returned value in console
 baseArray.populate(5)  // Returns [ 0, 1, 2, 3, 4 ]
 baseArray.populate(5, true)  // Returns randomized e.g. [ 51, 18, 40, 30, 46 ] 
 
@@ -72,7 +69,6 @@ baseArray.getTypes() // Returns{
                      // }
 
 baseArray.indexOfAll(2)  // Returns [ 1, 6 ]
-baseArray.indexOfAll(2).print()  // Returns [ 1, 6 ]
 
 baseArray.toObject()  // Returns { key1: 1, 
                       // key2: 2, 

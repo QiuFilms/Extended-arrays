@@ -6,7 +6,6 @@ const repeats = Object.defineProperty(Array.prototype, 'repeats', {
           count++
         }
       }
-      addPrint(count)
       return count
     }
 });
@@ -22,7 +21,6 @@ const toObject = Object.defineProperty(Array.prototype, 'toObject', {
           object[`key${x+1}`] = this[x]
         }
       }
-      addPrint(object)
       return object
     }
 });
@@ -37,7 +35,6 @@ const indexOfAll = Object.defineProperty(Array.prototype, 'indexOfAll', {
             array.push(parseInt(x))
           }
         }
-        addPrint(array)
         return array
     }
 });
@@ -50,7 +47,6 @@ const getTypes = Object.defineProperty(Array.prototype, 'getTypes', {
         for (let x = 0; x < this.length; x++) {
           object[`index${x}`] = [this[x], typeof this[x]]
         }
-        addPrint(object)
         return object
     }
 });
@@ -84,7 +80,6 @@ const average = Object.defineProperty(Array.prototype, 'average', {
       sum += x
   }
 
-  addPrint(parseInt(sum/2))
   return parseInt(sum/2)
   }
 });
@@ -100,7 +95,6 @@ const largest  = Object.defineProperty(Array.prototype, 'largest', {
         value = x
       }
   }
-  addPrint(value)
   return value
   }
 });
@@ -117,7 +111,6 @@ const smallest = Object.defineProperty(Array.prototype, 'smallest', {
         value = x
       }
   }
-  addPrint(value)
   return value
   }
 });
@@ -139,7 +132,6 @@ const replace = Object.defineProperty(Array.prototype, 'replace', {
       }
     }
 
-  addPrint()
   return this
   }
 });
@@ -152,7 +144,6 @@ const replaceAll = Object.defineProperty(Array.prototype, 'replaceAll', {
       }
     }
 
-  addPrint()
   return this
   }
 });
@@ -188,12 +179,5 @@ const addProperty = Object.defineProperty(Object.prototype, 'addProperty', {
   }
 });
 
-function addPrint(value){
-  Object.defineProperty(Object.prototype, 'print', {
-    value: function() {
-      console.log(value);
-    }
-  });
-}
 
 export {}
