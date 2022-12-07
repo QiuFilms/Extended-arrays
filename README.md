@@ -36,7 +36,6 @@ To import functions use
 | toObject() | Return simple object created from array elements |
 | pushString(string) | Adds string at the end of array |
 | pushNumber(number) | Adds number at the end of array |
-| print() | Prints array |
 ||
 | defineProperty(name, callback) | Used to create custom function|
 
@@ -83,7 +82,6 @@ baseArray.pushString(string)  // Adds string at the end of array
 
 baseArray.pushNumber(number)  // Adds number at the end of array
 
-baseArray.print()  // Prints array
 ```
 ### Example for defineProperty()
 ```javascript
